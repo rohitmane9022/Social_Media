@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       
       <NavRoutes />
-      {postLoading && <Loader />}
+      {postLoading && <Loader />} 
       
     </div>
   );
