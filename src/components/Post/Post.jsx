@@ -121,7 +121,7 @@ export const Post = ({ post }) => {
             )}
             {actionMenu && (
               <div className="action-menu-container">
-                <AttentionSeeker effect="headShake">
+                <div >
                   <p
                     onClick={(e) => {
                       e.stopPropagation();
@@ -140,7 +140,7 @@ export const Post = ({ post }) => {
                   >
                     Delete Post
                   </p>
-                </AttentionSeeker>
+                </div>
               </div>
             )}
           </div>

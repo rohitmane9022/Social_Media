@@ -19,15 +19,15 @@ export const Signup = () => {
     avatarURL:bighead
   });
 
-  const { handleSignup, authSignupError } = useAuth();
+  const { handleSignup } = useAuth();
 
-  const [hidePassword, setHidePassword] = useState(true);
+
   return (
     <main className="login-page-container">
       
       <section className="login-form-container">
       <img src={twitter} alt={twitter} width="50px" height="41px"/>
-        <h1 style={{fontWeight:"600"}}>SignUp with Twitter</h1>
+        <h1 style={{fontWeight:"600",color:"white"}}>SignUp with Twitter</h1>
         <form
           onSubmit={(e) => {
             handleSignup(e, signupForm);
@@ -37,7 +37,7 @@ export const Signup = () => {
               email: "",
               username: "",
               password: "",
-              confirmPassword: "",
+              
             });
           }}
          
@@ -95,7 +95,7 @@ export const Signup = () => {
               <input
                 minlength="8"
                 placeholder="Password"
-                type={!hidePassword ? "text" : "password"}
+                type="password"
                 required
                 onChange={(e) => {
                   setSignupForm({ ...signupForm, password: e.target.value });
@@ -103,35 +103,14 @@ export const Signup = () => {
                 className="container_input"
               />
               
-            
-          
-
-          
-              <input
-                minlength="8"
-                placeholder="Confirm Password"
-                type={!hidePassword ? "text" : "password"}
-                required
-                onChange={(e) => {
-                  setSignupForm({
-                    ...signupForm,
-                    confirmPassword: e.target.value,
-                  });
-                }}
-                className="container_input"
-              />
-              
-            
           </div>
-          {authSignupError && (
-            <div className="error-message">{authSignupError}</div>
-          )}
+         
           <div>
             <button type="submit" className="btn">
               SignUp
             </button>
           </div>
-          <p style={{textAlign:"right",textDecoration:"none", marginTop:"10px",fontSize:"19px"}}>
+          <p style={{textAlign:"right",textDecoration:"none", marginTop:"10px",fontSize:"19px",color:"white"}}>
             Click Here <Link to="/login" style={{color:"#1DA1F2",fontSize:"19px",fontWeight:"590"}}>Login</Link>
           </p>
         </form>

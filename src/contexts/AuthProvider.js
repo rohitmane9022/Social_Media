@@ -11,7 +11,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const token = localStorage.getItem("token");
   const username = localStorage.getItem("username");
-  const [authError, setAuthError] = useState("");
+
   const [authSignupError, setAuthSignupError] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
   const handleSignup = async (e, formValues) => {
     try {
       e.preventDefault();
-      if (formValues.password === formValues.confirmPassword) {
+      if (formValues.password) {
         const response = await signupService(formValues);
         if (response.status === 201) {
           const token = response.data.encodedToken;
@@ -50,11 +50,9 @@ export const AuthProvider = ({ children }) => {
           });
           navigate(location?.state?.from?.pathname || "/");
         }
-      } else {
-        setAuthSignupError("Password and confirm-password do not match");
       }
     } catch (error) {
-      setAuthSignupError(error.response.data.errors[0]);
+      
       console.error(error);
     }
   };
@@ -81,7 +79,7 @@ export const AuthProvider = ({ children }) => {
       }
     } catch (error) {
       console.error(error);
-      setAuthError(error.response.data.errors[0]);
+      
     }
   };
 
@@ -100,8 +98,7 @@ export const AuthProvider = ({ children }) => {
         handleLogin,
         handleLogout,
         handleSignup,
-        authError,
-        authSignupError,
+       
       }}
     >
       {children}

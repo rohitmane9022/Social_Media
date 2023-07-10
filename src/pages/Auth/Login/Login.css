@@ -1,3 +1,6 @@
+body{
+  background-color: black;
+}
 .login-page-container{
   margin: 90px auto;
   /* background: rgb(223, 223, 223); */
@@ -39,7 +42,7 @@
   color: var(--Text-color);
   padding: 20px 0px;
 
-  border: 1px solid var(--Text-color);
+  border: 1px solid var(--primary-color);
   border-radius: 50px;
   margin-bottom: 10px;
   font-size: 17px;

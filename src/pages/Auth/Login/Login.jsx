@@ -14,10 +14,11 @@ export const Login = () => {
   const [loginForm, setLoginForm] = useState({ username: "", password: "" });
 
   return (
+    <div>
     <main className="login-page-container">
       <section className="login-form-container">
         <img src={twitter} alt={twitter} width="50px" height="41px"/>
-        <h1 style={{fontWeight:650}}>Login with Twitter</h1>
+        <h1 style={{fontWeight:650,color:"white"}}>Login with Twitter</h1>
 
         <form
           onSubmit={(e) => {
@@ -60,7 +61,7 @@ export const Login = () => {
               
             
           </div>
-          {authError && <div className="error-message">{authError}</div>}
+          
           <div className="btn-container">
             <button type="submit" className="btn">
               {" "}
@@ -68,7 +69,7 @@ export const Login = () => {
             </button>
             <button className="btn"
               onClick={(e) => {
-                handleLogin(e, "Rohit", "Rohit");
+                handleLogin(e, "rohitmane9022", "12345678");
                 setLoginForm({ username: "", password: "" });
               }}
             >
@@ -77,9 +78,10 @@ export const Login = () => {
               
             </button>
           </div>
-          <p style={{textAlign:"right",textDecoration:"none", marginTop:"10px",fontSize:"19px"}}>Click Here <Link to="/signup" style={{color:"#1DA1F2",fontSize:"19px",fontWeight:"590"}}>Signup</Link></p>
+          <p style={{textAlign:"right",textDecoration:"none", marginTop:"10px",fontSize:"19px",color:"white"}}>Click Here <Link to="/signup" style={{color:"#1DA1F2",fontSize:"19px",fontWeight:"590"}}>Signup</Link></p>
         </form>
       </section>
     </main>
+    </div>
   );
 };

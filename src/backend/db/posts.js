@@ -19,7 +19,7 @@ export const posts = [
           _id: uuid(),
           firstName: "Rohit",
           lastName: "Mane",
-          username: "Rohit",
+          username: "rohitmane9022",
           avatarURL:
             "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
         },
@@ -65,7 +65,7 @@ export const posts = [
           _id: uuid(),
           firstName: "Rohit",
           lastName: "Mane",
-          username: "Rohit",
+          username: "rohitmane9022",
           avatarURL:
             "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
         },
@@ -112,7 +112,7 @@ export const posts = [
           _id: uuid(),
           firstName: "Rohit",
           lastName: "Mane",
-          username: "Rohit",
+          username: "rohitmane9022",
           avatarURL:
             "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
         },
@@ -125,7 +125,7 @@ export const posts = [
         _id: uuid(),
         firstName: "Rohit",
         lastName: "Mane",
-        username: "Rohit",
+        username: "rohitmane9022",
         avatarURL:
           "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
         text: "This cat is a walking bundle of cuteness! I'm instantly smitten by its charm.",
@@ -160,7 +160,7 @@ export const posts = [
           _id: uuid(),
           firstName: "Rohit",
           lastName: "Mane",
-          username: "Rohit",
+          username: "rohitmane9022",
           avatarURL:
             "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
         },
@@ -181,7 +181,7 @@ export const posts = [
         _id: uuid(),
         firstName: "Rohit",
         lastName: "Mane",
-        username: "Rohit",
+        username: "rohitmane9022",
         avatarURL:
           "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
         text: "Wow, your makeup skills are goals! Absolutely stunning transformation.",
@@ -214,7 +214,7 @@ export const posts = [
               _id: uuid(),
               firstName: "Rohit",
               lastName: "Mane",
-              username: "Rohit",
+              username: "rohitmane9022",
               avatarURL:
                 "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
             },
@@ -319,7 +319,7 @@ export const posts = [
       dislikedBy: [],
     },
     comments: [],
-    username: "Rohit",
+    username: "rohitmane9022",
     firstName: "Rohit",
     lastName: "Mane",
     avatarURL:
@@ -340,7 +340,7 @@ export const posts = [
     comments: [],
     firstName: "Rohit",
     lastName: "Mane",
-    username: "Rohit",
+    username: "rohitmane9022",
     createdAt: "2022-03-06T12:55:06+05:30",
     updatedAt: formatDate(),
   },
@@ -366,7 +366,7 @@ export const posts = [
     },
     comments: [
     ],
-    username: "Rohit",
+    username: "rohitmane9022",
     firstName: "Rohit",
     lastName: "Mane",
     avatarURL:

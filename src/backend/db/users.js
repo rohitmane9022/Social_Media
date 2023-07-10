@@ -30,7 +30,7 @@ export const users = [
         _id: uuid(),
         firstName: "Rohit",
         lastName: "Mane",
-        username: "Rohit",
+        username: "rohitmane9022",
         avatarURL:
           "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
       },
@@ -42,8 +42,8 @@ export const users = [
     _id: uuid(),
     firstName: "Rohit",
     lastName: "Mane",
-    username: "Rohit",
-    password: "Rohit",
+    username: "rohitmane9022",
+    password: "12345678",
     createdAt: new Date("November 04 2016 09:09:09"),
     updatedAt: formatDate(),
     avatarURL:
@@ -90,7 +90,7 @@ export const users = [
         _id: uuid(),
         firstName: "Rohit",
         lastName: "Mane",
-        username: "Rohit",
+        username: "rohitmane9022",
         avatarURL:
           "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
       },
@@ -108,7 +108,7 @@ export const users = [
         _id: uuid(),
         firstName: "Rohit",
         lastName: "Mane",
-        username: "Rohit",
+        username: "rohitmane9022",
         avatarURL:
           "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
       },
@@ -142,7 +142,7 @@ export const users = [
         _id: uuid(),
         firstName: "Rohit",
         lastName: "Mane",
-        username: "Rohit",
+        username: "rohitmane9022",
         avatarURL:
           "https://res.cloudinary.com/dj1awovlx/image/upload/v1688111476/all%20photos/IMG_20221231_225356_eqzvcy.jpg",
       },
