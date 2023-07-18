@@ -28,7 +28,7 @@ export const EditPostForm = ({
   const handleEditMediaInput = (e) => {
     e.preventDefault();
     const file = e.target.files[0];
-    if (file?.type?.startsWith("image/") || file?.type?.startsWith("video/")) {
+    if (file?.type?.startsWith("image/")) {
       if (file.size < 20 * 1024 * 1024) {
         setPostEditForm((prev) => ({
           ...prev,
