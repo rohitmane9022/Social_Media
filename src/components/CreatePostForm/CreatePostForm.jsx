@@ -28,19 +28,17 @@ export const CreatePostForm = ({ setIsCreateNewPostClicked, className }) => {
 
   const handleMediaInput = (e) => {
     const file = e.target.files[0];
-    if (file?.type.startsWith("image/") || file.type.startsWith("video/")) {
+    if (file?.type.startsWith("image/")) {
       if (file.size < 20 * 1024 * 1024) {
         setPostForm((prev) => ({
           ...prev,
           mediaUrl: URL.createObjectURL(file),
-          type: file?.type.startsWith("image/") ? "image" : "video",
+          type: file?.type.startsWith("image/") ? "image" : "",
         }));
       } else {
         toast.error("file must be less than 20mb");
       }
-    } else {
-      toast.error("file must be a Video (MP4/MOV) or an Image (JPEG/PNG)");
-    }
+    } 
   };
 
   useEffect(() => {
