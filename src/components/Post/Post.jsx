@@ -197,11 +197,7 @@ export const Post = ({ post }) => {
                 />
               )}
               
-              <span
-                onClick={() => {
-                  setShowLikesModal(true);
-                }}
-              >
+              <span>
                 <div>{post?.likes?.likeCount}</div>
               </span>
             </div>
@@ -232,25 +228,6 @@ export const Post = ({ post }) => {
             </div>
           </div>
         </div>
-        <div className="likes-details-container">
-          {showLikesModal && (
-            <div className="like-modal">
-              <div className="likes-content">
-                <div className="likes-header">
-                  <h2>Liked By</h2>
-                  <RxCross2
-                    className="close-likes-icon"
-                    onClick={() => {
-                      setShowLikesModal(false);
-                    }}
-                  />
-                </div>
-                <LikesModal post={post} isFollowing={isFollowing} />
-              </div>
-            </div>
-          )}
-        </div>
-
         {showComments && (
           <div className="comments-section-container">
             {/* <Slide duration={1000} cascade> */}
