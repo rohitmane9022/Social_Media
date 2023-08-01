@@ -22,7 +22,7 @@ export const EditPostForm = ({
   const [postEditForm, setPostEditForm] = useState({
     content: post?.content,
     mediaUrl: post?.mediaUrl,
-    type: "video",
+    type: "image",
   });
 
   const handleEditMediaInput = (e) => {
@@ -33,13 +33,13 @@ export const EditPostForm = ({
         setPostEditForm((prev) => ({
           ...prev,
           mediaUrl: URL.createObjectURL(file),
-          type: file?.type?.startsWith("image/") ? "image" : "video",
+          type: file?.type?.startsWith("image/"),
         }));
       } else {
         toast.error("file must be less than 20mb");
       }
     } else {
-      toast.error("file must be a Video (MP4/MOV) or an Image (JPEG/PNG)");
+      toast.error("file must be or an Image (JPEG/PNG)");
     }
   };
 
@@ -48,7 +48,7 @@ export const EditPostForm = ({
       ...prev,
       content: post?.content,
       mediaUrl: post?.mediaUrl,
-      type: post?.type || "video",
+      type: post?.type,
     }));
   }, [loggedInUserState]);
 
@@ -95,9 +95,9 @@ export const EditPostForm = ({
           </div>
           {postEditForm?.mediaUrl && postEditForm?.type !== "image" && (
             <div className="media-container">
-              <video muted loop>
-                <source src={postEditForm?.mediaUrl} />
-              </video>
+              
+                <img src={postEditForm?.mediaUrl} />
+             
               <IoMdClose
                 onClick={() => {
                   setPostEditForm({ ...postEditForm, mediaUrl: "" });
