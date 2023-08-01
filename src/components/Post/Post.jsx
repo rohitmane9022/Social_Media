@@ -21,7 +21,7 @@ import { EditPostForm } from "../EditPostForm/EditPostForm";
 import { useUser } from "../../contexts/UserProvider";
 import { Comment } from "./components/Comment/Comment";
 import { getTimeDifference } from "../../utils/date";
-import { LikesModal } from "./components/LikesModal/LikesModal";
+
 
 export const Post = ({ post }) => {
   const navigate = useNavigate();
