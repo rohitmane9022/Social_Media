@@ -314,7 +314,7 @@ export const posts = [
     mediaUrl:
       "",
     likes: {
-      likeCount: 3,
+      likeCount: 0,
       likedBy: [],
       dislikedBy: [],
     },
